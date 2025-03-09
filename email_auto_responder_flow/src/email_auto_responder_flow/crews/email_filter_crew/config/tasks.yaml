@@ -1,0 +1,27 @@
+
+filter_emails:
+  description: >
+    Analyze the incoming email content and classify it based on priority, 
+    category, and urgency. Identify key topics and main points of the email.
+  expected_output: >
+    A structured analysis of the email including priority level, category,
+    main topics, and key points that need attention.
+  agent: email_filter_agent
+
+action_required_emails:
+  description: >
+    Review the email content and determine what specific actions are required,
+    including deadlines, responsibilities, and follow-up tasks.
+  expected_output: >
+    A detailed list of required actions, deadlines, and responsibilities
+    extracted from the email content.
+  agent: email_action_agent
+
+draft_responses:
+  description: >
+    Create appropriate email responses based on the email analysis and
+    required actions. Ensure the tone and content match the context.
+  expected_output: >
+    A professional and contextually appropriate email response that addresses
+    all necessary points and maintains proper business communication standards.
+  agent: email_response_writer
